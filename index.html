@@ -26,11 +26,19 @@
         }
         .offer-section {
             padding: 20px;
+            position: relative;
+        }
+        .offer-image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
         }
         .offer-image {
             width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            display: block;
+            filter: blur(3px); /* Slight blur effect */
         }
         .overlay {
             position: absolute;
@@ -50,6 +58,7 @@
             text-decoration: none;
             border-radius: 5px;
             transition: 0.3s;
+            margin-top: 20px;
         }
         .cta-button:hover {
             background: #e64a19;
@@ -79,12 +88,15 @@
 <body>
     <div class="container">
         <header>
-            <h1>Exclusive Offer!</h1>
+            <h1>Exclusive CPA Offer!</h1>
             <p>Don't miss this limited-time opportunity. Sign up now and claim your reward!</p>
         </header>
         <main>
             <div class="offer-section">
-                <img src="offer-image.jpg" alt="Special Offer" class="offer-image">
+                <div class="offer-image-container">
+                    <img src="offer-image.jpg" alt="Special Offer" class="offer-image">
+                    <div class="overlay"></div>
+                </div>
                 <h2>Why Choose This Offer?</h2>
                 <ul>
                     <li>✔ Exclusive rewards for new users</li>
