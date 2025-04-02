@@ -50,18 +50,37 @@
             opacity: 0.6;
         }
         .cta-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: inline-block;
-            background: #ff5722;
+            background: #ff0000;
             color: #fff;
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 20px 40px;
+            font-size: 1.5em;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
             transition: 0.3s;
-            margin-top: 20px;
+            animation: heartbeat 1.5s infinite, shake 0.5s infinite alternate, alarmGlow 1s infinite alternate;
         }
         .cta-button:hover {
-            background: #e64a19;
+            background: #cc0000;
+        }
+        @keyframes heartbeat {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+        @keyframes shake {
+            0% { transform: translate(-50%, -50%) rotate(-3deg); }
+            100% { transform: translate(-50%, -50%) rotate(3deg); }
+        }
+        @keyframes alarmGlow {
+            0% { box-shadow: 0 0 10px #ff0000; }
+            100% { box-shadow: 0 0 30px #ff0000; }
         }
         .testimonial-section, .faq-section {
             margin-top: 30px;
@@ -88,7 +107,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Exclusive CPA Offer!</h1>
+            <h1>Exclusive Live Offer!</h1>
             <p>Don't miss this limited-time opportunity. Sign up now and claim your reward!</p>
         </header>
         <main>
@@ -96,6 +115,7 @@
                 <div class="offer-image-container">
                     <img src="offer-image.jpg" alt="Special Offer" class="offer-image">
                     <div class="overlay"></div>
+                    <a href="https://smrturl.co/a/sdcc1aecee2/8871?s1=" class="cta-button">Claim Your Offer Now !!!</a>
                 </div>
                 <h2>Why Choose This Offer?</h2>
                 <ul>
@@ -104,7 +124,6 @@
                     <li>✔ 100% secure and verified</li>
                     <li>✔ Limited-time deal – act fast!</li>
                 </ul>
-                <a href="https://smrturl.co/a/sdcc1aecee2/8871?s1=" class="cta-button">Claim Your Offer Now</a>
             </div>
             <div class="testimonial-section">
                 <h2>What Our Users Say</h2>
