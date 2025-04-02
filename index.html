@@ -102,6 +102,20 @@
             margin-top: 20px;
             font-size: 0.9em;
         }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -115,7 +129,7 @@
                 <div class="offer-image-container">
                     <img src="offer-image.jpg" alt="Special Offer" class="offer-image">
                     <div class="overlay"></div>
-                    <a href="https://smrturl.co/a/sdcc1aecee2/8871?s1=" class="cta-button">Claim Your Offer Now !!!</a>
+                    <a href="https://smrturl.co/a/sdcc1aecee2/8871?s1=" class="cta-button">Hurry Up!! Claim Your Offer Now !!</a>
                 </div>
                 <h2>Why Choose This Offer?</h2>
                 <ul>
@@ -157,4 +171,21 @@
         </footer>
     </div>
 </body>
+<!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '957222753276498');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=957222753276498&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </html>
